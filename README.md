@@ -8,10 +8,6 @@ This application **requires** ffmpeg to work which you can get [here](https://ff
 Download the latest binaries from the [releases page](https://github.com/globbertot/Mp3Man/releases/latest) suitable for your system.
 **Note:** Ensure that FFmpeg is installed on your system before running Mp3Man.
 
-### For Windows:
-1. Download the Windows binary from the releases page.
-2. Extract the archive and run the executable.
-
 ### Updates ###
 From version V0.0.2 and onwards, updates will be applied automatically. If you are using V0.0.1 you will need to manually download and replace the binary with the latest version from the [releases page](https://github.com/globbertot/Mp3Man/releases/latest).
 
