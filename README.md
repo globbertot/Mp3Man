@@ -18,7 +18,7 @@ From version V0.0.2 and onwards, updates will be applied automatically. If you a
 ## Roadmap ##
 Here’s what’s planned for V0.0.2 and future versions:
 - **Open downloaded MP3 files automatically** | STATUS: In Progress
-- **Choice between youtube instead of youtube music** | STATUS: Paused
+- **Choice between youtube instead of youtube music** | STATUS: Complete
 - **iTunes integration on Linux and possibly macOS** | STATUS: Paused
 - **Not converting files if FFmepg is not installed** | STATUS: Paused 
 - **YouTube title search instead of URLs** | STATUS: More likely in V0.0.3
