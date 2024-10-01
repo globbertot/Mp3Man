@@ -10,7 +10,7 @@ Download the latest binaries from the [releases page](https://github.com/globber
 
 !! **Updates** !!
 
-Please note that updates **should** be installed automatically for this application, if not please update manually re-installing the latest binaries.
+You should be notified whenever there is an major update available, from there, you'll need to manually re-install the application.
 
 ## Suggesting features ##
 If you want any other features feel free to post an Issue about it.
