@@ -1,24 +1,19 @@
 # Mp3Man - LATEST VERSION: V0.0.1
-Mp3Man is a lightweight Qt-based application designed to download and convert YouTube audio files into MP3 format. It serves as a convenient front-end for youtube-dl, simplifying the process of obtaining and managing audio content from YouTube.
+Mp3Man is a lightweight Qt-based application designed to download and convert YouTube audio files into MP3 format. It serves as a convenient front-end for yt-dlp, simplifying the process of obtaining and managing audio content from YouTube.
 
 ## FFmpeg installation ##
-This application **requires** ffmpeg to work which you can get [here](https://ffmpeg.org/download.html).
+This application **requires** ffmpeg to work, and we suggest getting it from [here](https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest).
 
 ## Installation ##
-Download the latest binaries from the [releases page](https://github.com/globbertot/Mp3Man/releases/latest) suitable for your system.
-**Note:** Ensure that FFmpeg is installed on your system before running Mp3Man.
+Download the latest binaries from the [releases page](https://github.com/globbertot/Mp3Man/releases/latest) suitable for your system
 
-### Updates ###
-From version V0.0.2 and onwards, updates will be applied automatically. If you are using V0.0.1 you will need to manually download and replace the binary with the latest version from the [releases page](https://github.com/globbertot/Mp3Man/releases/latest).
 
-## Roadmap ##
-Here’s what’s planned for V0.0.2 and future versions:
-- **Open downloaded MP3 files automatically** | STATUS: In Complete
-- **Choice between youtube instead of youtube music** | STATUS: Complete
-- **Automatic updates** | STATUS: In progress
-- **iTunes integration on Linux and possibly macOS** | STATUS: Paused
-- **Not converting files if FFmepg is not installed** | STATUS: Paused
-- **YouTube title search instead of URLs** | STATUS: More likely in V0.0.3
+!! **Updates** !!
+
+Please note that updates **should** be installed automatically for this application, if not please update manually re-installing the latest binaries.
+
+## Suggesting features ##
+If you want any other features feel free to post an Issue about it.
 
 ## Contributions
 Contributions are welcome! If you’d like to contribute to Mp3Man, please follow these steps:
