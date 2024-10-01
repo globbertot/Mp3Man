@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libQNotifier.so -o libQNotifier.so CMakeFiles/QNotifier.dir/QNotifier_autogen/mocs_compilation.cpp.o CMakeFiles/QNotifier.dir/QNotifier.cpp.o CMakeFiles/QNotifier.dir/QChoiceNotifier.cpp.o  /usr/lib/libQt6Widgets.so.6.7.3 /usr/lib/libQt6Gui.so.6.7.3 /usr/lib/libQt6Core.so.6.7.3 /usr/lib/libGLX.so /usr/lib/libOpenGL.so

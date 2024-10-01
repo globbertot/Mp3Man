@@ -1,0 +1,5 @@
+/home/globbertot/Documents/qtProjects/Mp3Man/Mp3Man/libs/QNotifier/build/CMakeFiles/QNotifier.dir
+/home/globbertot/Documents/qtProjects/Mp3Man/Mp3Man/libs/QNotifier/build/CMakeFiles/edit_cache.dir
+/home/globbertot/Documents/qtProjects/Mp3Man/Mp3Man/libs/QNotifier/build/CMakeFiles/rebuild_cache.dir
+/home/globbertot/Documents/qtProjects/Mp3Man/Mp3Man/libs/QNotifier/build/CMakeFiles/QNotifier_autogen_timestamp_deps.dir
+/home/globbertot/Documents/qtProjects/Mp3Man/Mp3Man/libs/QNotifier/build/CMakeFiles/QNotifier_autogen.dir
