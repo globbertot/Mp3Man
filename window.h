@@ -19,6 +19,12 @@
 #include <QUrl>
 #include <QSettings>
 #include <QMessageBox>
+#include <QDir>
+#include <QThread>
+#include <QDesktopServices>
+
+#include "libs/QNotifier/QNotifier.h"
+#include "libs/QNotifier/QChoiceNotifier.h"
 
 #include "updater.h"
 #include "youtube.h"
@@ -30,7 +36,7 @@ class window : public QMainWindow
 public:
     window(QWidget *parent = nullptr);
     ~window();
-    const QString VERSION = "V0.01";
+    const QString VERSION = "V0.0.1";
 
     void clearScreen();
     template<typename widgetType>
@@ -44,8 +50,8 @@ public:
 
 private:
     Ui::window *ui;
-    Updater* update = new Updater(this);
-    Youtube* yt = new Youtube(this);
+    Updater* update;
+    Youtube* yt;
 
     // Pages
     void updatePage();
@@ -55,13 +61,16 @@ private:
     void downloadComplete();
     bool canDownload = true;
 
+    void noFFmpeg(const QString& packageManager);
     void loadSettings();
     void resetSettings();
     QSettings* setts;
     QString path;
+    bool windowsUser = false;
+    bool bItunesIntergration;
+    bool bOpenSongs;
 
-
-    QString styleSheet = R"(
+    const QString stylesheet = R"(
     /* QLabel styling */
     QLabel {
         color: #00ffff;
@@ -105,6 +114,48 @@ private:
         border: 1px solid #555555;
     }
 
+    /* QCheckBox styling */
+    QCheckBox {
+        color: #ffffff;
+    }
+
+    QCheckBox::indicator {
+        background-color: #333333;
+        border: 1px solid #00ffff;
+        width: 15px;
+        height: 15px;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00ffff;
+        border: 1px solid #00ffff;
+    }
+
+    QCheckBox::indicator:checked:hover {
+        background-color: #66ccff;
+        border: 1px solid #66ccff;
+    }
+
+    QCheckBox::indicator:unchecked {
+        background-color: #333333;
+        border: 1px solid #00ffff;
+    }
+
+    QCheckBox::indicator:unchecked:hover {
+        background-color: #555555;
+        border: 1px solid #66ccff;
+    }
+
+    QCheckBox::indicator:disabled {
+        background-color: #222222;
+        border: 1px solid #555555;
+    }
+
+    QCheckBox::indicator:checked:disabled {
+        background-color: #222222;
+        border: 1px solid #555555;
+    }
+
     /* QMainWindow styling */
     QMainWindow {
         background-color: #121212;
@@ -114,6 +165,6 @@ private:
     #centralwidget {
         background-color: #121212;
     }
-)";
+    )";
 };
 #endif // WINDOW_H
