@@ -9,22 +9,26 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Network Widgets)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Network Widgets Multimedia)
+add_subdirectory(libs/QNotifier/)
 
 set(PROJECT_SOURCES
     window.ui main.cpp
     window.cpp window.h
     updater.cpp updater.h
     youtube.h youtube.cpp
+    qmediaplayerwidget.h qmediaplayerwidget.cpp
 )
 
-qt_add_executable(Mp3Man
+qt_add_executable(Mp3Man WIN32
     ${PROJECT_SOURCES}
 )
 
 target_link_libraries(Mp3Man
     PRIVATE Qt6::Widgets
     PRIVATE Qt6::Network
+    PRIVATE Qt6::Multimedia
+    PRIVATE QNotifier
 )
 
 include(GNUInstallDirs)
